@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background and Body Styling */
+body {
+    background: url('swim.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-color: #b8e5f6; /* Soft pool water blue fallback */
+    color: #073642; /* Darker text for contrast against light blue */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; /* Allows vertical alignment of header, main, and footer */
+    align-items: center;
+    gap: 40px; /* Space between sections */
+}
+
+/* Header Section */
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures header spans across the page */
+    background-color: #79c6de; /* Light pool blue for the header */
+    color: #ffffff;
+    border-bottom: 2px solid #a2eaf7; /* Slightly lighter border effect */
+}
+
+header .logo {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White links for contrast */
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    color: #d7f7ff; /* Very light blue for highlight */
+}
+
+/* Main Section (Move Down and Style) */
+main {
+    margin-top: 60px; /* Moves main down from the header */
+    padding: 40px; /* Internal spacing */
+    border-radius: 15px; /* Rounded edges */
+    width: 80%; /* Limits width for centered appearance */
+    max-width: 1200px;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: rgba(184, 229, 246, 0.9); /* Semi-transparent pool blue overlay */
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #034c72; /* Stronger pool blue for headlines */
+    margin-bottom: 10px;
+}
+
+.hero-content h2 span {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #29aacf; /* Bright water blue for emphasis */
+    display: block;
+}
+
+.hero-content button {
+    padding: 12px 24px;
+    background-color: #51c0db; /* Vibrant button blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #6ed2ed; /* Lighter hover blue */
+}
+
+/* Image Styling */
+.product-images img {
+    border: 3px solid #8bd8ec; /* Light pool water border */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Auth Buttons */
+.auth-buttons .sign-up {
+    background-color: #29aacf; /* Water blue */
+    color: #ffffff;
+}
+
+.auth-buttons .sign-up:hover {
+    background-color: #51c0db; /* Slightly lighter hover effect */
+}
+
+.auth-buttons .login {
+    background-color: #51c0db; /* Slightly lighter pool blue */
+    color: #ffffff;
+}
+
+.auth-buttons .login:hover {
+    background-color: #6ed2ed; /* Light blue on hover */
+}
+
+/* Footer and Additional Elements */
+footer {
+    padding: 20px;
+    background-color: #79c6de; /* Same as header for consistency */
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid #a2eaf7;
+    width: 100%; /* Ensure the footer spans across */
+}
+
+footer a {
+    text-decoration: none;
+    color: #d7f7ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

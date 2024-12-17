@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Page</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<!-- Sidebar -->
+<nav class="sidebar">
+    <div class="logo">aquaClub</div>
+    <div class="user-profile">
+        <img src="default-profile.png" alt="User Profile Picture" class="profile-picture">
+        <!-- Display username dynamically -->
+        <p class="username"> <?php echo htmlspecialchars($username); ?></p>
+    </div>
+    <ul class="menu">
+        <li><a href="user_dashboard.php">Dashboard</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="schedules.php">Schedules</a></li>
+        <li><a href="progress.php" class="active">Progress</a></li>
+        <li><a href="training.php">Programs</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-card">
+            <div class="circle" data-progress="95"></div>
+            <h2>Swimming</h2>
+            <p>Butterfly Stroke</p>
+        </div>
+
+        <div class="progress-card">
+            <div class="circle" data-progress="10"></div>
+            <h2>Artistic Swimming</h2>
+            <p>Prepare for the monthly competitions</p>
+        </div>
+
+        <div class="progress-card">
+            <div class="circle" data-progress="70"></div>
+            <h2> Water Polo</h2>
+            <p>Beginner Classes</p>
+        </div>
+
+        <div class="progress-card">
+            <div class="circle" data-progress="39"></div>
+            <h2>Open Water Swimming</h2>
+            <p>Freestyle</p>
+        </div>
+    </div>
+</body>
+</html>

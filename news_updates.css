@@ -1,0 +1,151 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a.active, 
+.sidebar ul li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Content Section */
+.content {
+    margin-left: 260px; /* Space for sidebar */
+    padding: 20px;
+}
+
+/* Styling for Add News Form */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto; /* Center the form */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Button Links inside the Table */
+table td a {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Sidebar */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

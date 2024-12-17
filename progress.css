@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f7fa;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100%;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar .menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu .active {
+    background-color: #0054a6;
+}
+
+/* Progress Cards Container */
+.progress-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* More spacing between cards */
+    justify-content: space-between;
+}
+
+/* Individual Progress Card */
+.progress-card {
+    background-color: white;
+    border-radius: 12px; /* Smoother edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: calc(25% - 30px); /* Increased width for cards */
+    padding: 30px; /* More padding inside */
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.progress-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Progress Circle */
+.progress-card .circle {
+    width: 100px; /* Larger circle */
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e8f0ff; /* Light blue background */
+    margin: 0 auto 20px; /* More spacing below the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Larger font */
+    color: #003366;
+    position: relative;
+    border: 6px solid rgba(0, 123, 255, 0.2); /* Slightly thicker border */
+}
+
+.progress-card .circle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 123, 255, 0.1); /* Inner highlight */
+}
+
+/* Card Title and Description */
+.progress-card h2 {
+    font-size: 1.4rem; /* Slightly larger title */
+    color: #003366;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.progress-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.progress-card small {
+    font-size: 1rem;
+    color: #888;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Adjust Container Layout for Mobile */
+@media (max-width: 1200px) {
+    .progress-card {
+        width: calc(33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-card {
+        width: 90%; /* Full width on small screens */
+    }
+
+    .progress-card .circle {
+        width: 90px; /* Slightly smaller circles on small devices */
+        height: 90px;
+        font-size: 1.2rem;
+    }
+}

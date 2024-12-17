@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">SwimApp</div>
+            <div class="user-profile">
+                <img src="Fadzai.jpg" alt="User Profile Picture" class="profile-picture">
+                <p class="username">Fadzai</p>
+            </div>
+            <ul class="menu">
+                <li><a href="user_dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="training.html">Programs</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Profile Content -->
+        <div class="main-profile-content">
+            <div class="header">
+                <h1>Hello, <span class="username">Fadzai</span>!</h1>
+                <p>This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks.</p>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+
+            <!-- User Information Section -->
+            <div class="user-info">
+                <h2>My Account</h2>
+                <div class="info-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="lucky.fadzai" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" value="fadzai@example.com" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" value="Fadzai" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" value="Doe" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

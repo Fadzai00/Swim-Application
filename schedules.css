@@ -1,0 +1,222 @@
+/* General Reset and Page Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: url('swim.jpeg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the full background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    color: #333333;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #004d99; /* Dark Blue Sidebar */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    padding: 20px 15px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #00aaff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a.active,
+.menu a:hover {
+    background-color: #00aaff; /* Highlighted Active Link */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px; /* To match sidebar width */
+    padding: 20px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #004466;
+}
+
+.header p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Schedule Content */
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.day {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day h3 {
+    color: #004466;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.day ul {
+    list-style: none;
+}
+
+.day li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.day li:last-child {
+    margin-bottom: 0;
+}
+
+.activity-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button {
+    background-color: #00c853;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+.update-button {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Forms */
+form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 8px 12px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .schedule {
+        flex-direction: column;
+    }
+
+    .day {
+        flex: 1 1 100%;
+    }
+}

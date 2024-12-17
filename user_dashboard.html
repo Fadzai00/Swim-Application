@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user_dash.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Top Welcome Section -->
+        <header class="welcome-header">
+            <h1>Welcome, <span class="username">John Doe</span>!</h1>
+        </header>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">SwimApp</div>
+            <div class="user-profile">
+                <img src="default-profile.png" alt="User Profile Picture" class="profile-picture">
+                <p class="username">John Doe</p>
+            </div>
+            <ul class="menu">
+                <li><a href="user_dashboard.php" class="active">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="schedules.html">Schedules</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="training.html">Programs</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="news-updates-section">
+                <h2>Latest Swimming News</h2>
+                <div class="news-container">
+                    <article class="news-item">
+                        <img src="champs.jpeg" alt="News Image 1" class="news-image">
+                        <h3>National Swimming Championships Announced</h3>
+                        <p>The 2024 National Swimming Championships will be held in July. Swimmers from across the country are gearing up for this exciting event.</p>
+                        <a href="#">Read more...</a>
+                    </article>
+                    <article class="news-item">
+                        <img src="training.jpeg" alt="News Image 2" class="news-image">
+                        <h3>New Training Techniques for Beginners</h3>
+                        <p>Coaches are introducing innovative methods to help beginner swimmers improve their strokes and boost their confidence in the water.</p>
+                        <a href="#">Read more...</a>
+                    </article>
+                    <article class="news-item">
+                        <img src="top.jpg" alt="News Image 3" class="news-image">
+                        <h3>Top Swimmers to Watch in 2024</h3>
+                        <p>Experts highlight the top athletes to look out for this season, with promising talent emerging from regional competitions.</p>
+                        <a href="#">Read more...</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #01010b;
+    background-image: url('polo.jpeg'); /* Path to your background image */
+
+}
+
+.main-container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #004d99;
+    color: #fff;
+    padding: 20px 10px;
+    height: 100vh; /* Full-height sidebar */
+    position: fixed;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-profile .profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.sidebar .username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 0;
+}
+
+.sidebar .menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar .menu li a:hover, 
+.sidebar .menu li a.active {
+    background-color: #0056b3;
+}
+
+/* Programs Feed Container */
+.programs-feed-container {
+    margin-left: 250px; /* Leave space for the fixed sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #020223;
+}
+
+/* Programs Cards Layout */
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    padding: 10px 0;
+}
+
+/* Individual Feed Card */
+.feed-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feed-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feed-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Keep image proportions */
+}
+
+.feed-content {
+    padding: 15px;
+}
+
+.feed-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.feed-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
